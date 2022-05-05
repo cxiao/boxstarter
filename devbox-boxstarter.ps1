@@ -31,6 +31,7 @@ choco install python -y
 choco install pip -y
 refreshenv
 python -m pip install --upgrade pip
+pip install --upgrade setuptools
 
 choco install cmake -y
 choco install meson -y
