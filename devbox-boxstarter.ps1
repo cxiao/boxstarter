@@ -6,8 +6,10 @@ Write-Host "Initializing chocolatey"
 choco feature enable -n allowGlobalConfirmation
 choco feature enable -n allowEmptyChecksums
 
-$Boxstarter.RebootOk=$true
-$Boxstarter.NoPassword=$false
+
+$Boxstarter.RebootOk = $true
+$Boxstarter.NoPassword = $false
+$Boxstarter.AutoLogin = $true # Save my password securely and auto-login after a reboot
 
 # Basic setup
 Set-WindowsExplorerOptions -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowHiddenFilesFoldersDrives
